@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Thumbnail Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+<body>
+  
+  <div class="container">
+    <h1>AI YouTube Thumbnail Generator</h1>
+
+    <div class="form-group">
+      <label for="videoTitle">Video Title</label>
+      <input type="text" id="videoTitle" placeholder="Enter your video title"/>
+    </div>
+
+  <div class="form-group">
+    <label for="imageUpload">Upload Background Image</label>
+    <input type="file" id="imageUpload" accept="image/*" />
+  </div>
+
+    <div class="form-group">
+      <label for="styleSelect">Thumbnail Style</label>
+      <select id="styleSelect">
+        <option value="bold">Bold Text</option>
+        <option value="reaction">Reaction Face</option>
+        <option value="gaming">Gaming</option>
+        <option value="educational">Educational</option>
+      </select>
+    </div>
+
+    <button id="generateBtn">Generate Thumbnail</button>
+
+    <div class="preview">
+      <h2>Preview</h2>
+      <img id="thumbnailPreview" src="" alt="Your generated thumbnail will appear here."/>
+      <a id="downloadLink" href="#" download="thumbnail.jpg">Download Thumbnail</a>
+    </div>
+  </div>
+
+  
+</body>
+</html>

@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #121212;
+  color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 360px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.5rem;
+  background: #2a2a2a;
+  border: 1px solid #333;
+  color: #e0e0e0;
+  border-radius: 4px;
+}
+
+.form-group input::placeholder {
+  color: #777;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #bb86fc;
+  color: #121212;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #9c4ef3;
+}
+
+.preview {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.preview h2 {
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.preview img {
+  max-width: 100%;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+#downloadLink {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #bb86fc;
+  text-decoration: none;
+}
