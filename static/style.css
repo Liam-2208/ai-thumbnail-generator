@@ -12,20 +12,22 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding: 1rem;
 }
 
 .container {
   background: #1e1e1e;
   padding: 2rem;
   border-radius: 8px;
-  width: 360px;
+  width: 100%;
+  max-width: 400px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
   text-align: center;
   margin-bottom: 1rem;
-  color: #fff;
+  font-size: 1.5rem;
 }
 
 .form-group {
@@ -36,6 +38,7 @@ h1 {
   display: block;
   margin-bottom: 0.5rem;
   color: #ccc;
+  font-size: 0.9rem;
 }
 
 .form-group input,
@@ -46,6 +49,7 @@ h1 {
   border: 1px solid #333;
   color: #e0e0e0;
   border-radius: 4px;
+  font-size: 0.9rem;
 }
 
 .form-group input::placeholder {
@@ -61,6 +65,7 @@ button {
   cursor: pointer;
   border-radius: 4px;
   font-weight: bold;
+  font-size: 1rem;
   transition: background 0.2s ease;
 }
 
@@ -76,6 +81,7 @@ button:hover {
 .preview h2 {
   color: #fff;
   margin-bottom: 0.75rem;
+  font-size: 1.2rem;
 }
 
 .preview img {
@@ -89,4 +95,5 @@ button:hover {
   margin-top: 0.5rem;
   color: #bb86fc;
   text-decoration: none;
+  font-size: 0.9rem;
 }

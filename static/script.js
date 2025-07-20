@@ -5,10 +5,18 @@ const generateBtn = document.getElementById('generateBtn');
 const thumbnailPreview = document.getElementById('thumbnailPreview');
 const downloadLink = document.getElementById('downloadLink');
 
+
+
 generateBtn.addEventListener('click', async () => {
   const title = videoTitle.value.trim();
   const style = styleSelect.value;
+  console.log("Image file included:", !!imageFile);
   const imageFile = imageUpload.files[0];
+  const blob = await response.blob();
+  const url = URL.createObjectURL(blob);
+  thumbnailPreview.src = url;
+  downloadLink.href = url;
+  console.log("Thumbnail preview URL:", url);
 
   if (!title) {
     alert('Please enter a video title.');
@@ -33,8 +41,4 @@ generateBtn.addEventListener('click', async () => {
     return;
   }
 
-  const blob = await response.blob();
-  const url = URL.createObjectURL(blob);
-  thumbnailPreview.src = url;
-  downloadLink.href = url;
 });
